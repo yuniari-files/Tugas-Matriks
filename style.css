@@ -1,0 +1,130 @@
+body {
+  font-family: sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  background: #ffe0ef;
+  font-family: sans-serif;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #5a2a83;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
+  text-align: center;
+}
+
+.input-container {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px double #5a2a82; /* warna ungu cantikk~ */
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.input-ordo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-ordo label {
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+.input-ordo input {
+  width: 60px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+button {
+  padding: 7px 15px;
+  font-size: 16px;
+  background-color: #5a2a83;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #7b46b1;
+}
+
+.matrices-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.matrix-container {
+  text-align: center;
+}
+
+.matrix {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.matrix input[type="number"] {
+  width: 50px;
+  padding: 7px;
+  margin: 3px;
+  border-radius: 5px;
+  border: 1px solid #5a2a83;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.buttons-container button {
+  padding: 10px 20px;
+  font-size: 17px;
+  margin: 10px 15px;
+  background-color: #5a2a83;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.buttons-container button:hover {
+  background-color: #7b46b1;
+}
+
+.credit {
+  position: fixed;
+  bottom: 5px;
+  left: 10px;
+  font-size: 13px;
+  font-style: italic;
+  color: #310672; 
+  opacity: 0.7;
+  z-index: 1000;
+}

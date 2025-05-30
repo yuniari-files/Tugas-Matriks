@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Matriks Dinamis By Yuniari</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="input-container">
+  <h1>Matriks Dinamis 🎀</h1>
+  
+  <div class="input-ordo">
+    <label>Jumlah Baris: <input type="number" id="rows" min="1" value="2" /></label>
+    <label>Jumlah Kolom: <input type="number" id="cols" min="1" value="2" /></label>
+    <button id="generateBtn">Buat Matriks</button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="matrices-container">
+    <div class="matrix-container">
+      <h2>Matriks A</h2>
+      <div id="matrixA" class="matrix"></div>
+    </div>
+
+    <div class="matrix-container">
+      <h2>Matriks B</h2>
+      <div id="matrixB" class="matrix"></div>
+    </div>
+
+    <div class="matrix-container">
+      <h2>Hasilnya</h2>
+      <div id="matrixC" class="matrix"></div>
+    </div>
+  </div>
+
+  <div class="buttons-container" style="text-align:center; margin-top: 20px;">
+    <button id="sumBtn">Jumlahkan</button>
+    <button id="multiplyBtn">Kalikan</button>
+    <button id="resetBtn">Ulang</button>
+  </div>
+</div>
+
+<div class="credit">credit: designed by yuniari nur rahmawati (424054)</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
