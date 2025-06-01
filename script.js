@@ -1,6 +1,6 @@
 function generateMatrix(id, rows, cols, isResult = false) {
   const matrixDiv = document.getElementById(id);
-  matrixDiv.innerHTML = ""; // Bersihin dulu
+  matrixDiv.innerHTML = ""; 
 
   for (let i = 0; i < rows; i++) {
     const rowDiv = document.createElement("div");
@@ -12,7 +12,7 @@ function generateMatrix(id, rows, cols, isResult = false) {
       input.id = `${id}_${i}${j}`;
       input.value = 0;
       input.min = 0;
-      input.readOnly = isResult; // Kalau matriks hasil, input readonly supaya gak bisa diedit langsung
+      input.readOnly = isResult; 
       rowDiv.appendChild(input);
     }
     matrixDiv.appendChild(rowDiv);
