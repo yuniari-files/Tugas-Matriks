@@ -1,13 +1,39 @@
 body {
-  font-family: sans-serif;
+  background: 
+    url('pinggir.png') left repeat-y,
+    url('pinggir2.png') right repeat-y,
+    linear-gradient(#ffe8f3, #f7b1d3);
+  background-attachment: scroll, scroll, scroll;
+  background-size: 150px auto, 150px auto, auto;
+  background-position: left, right, center;
+  padding: 0px;
+  font-family: 'Comfortaa', cursive;
   color: #333;
   margin: 0;
-  padding: 20px;
-  background: #ffe0ef;
-  font-family: sans-serif;
   position: relative;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+}
+
+
+.hero-container {
+  padding: 30px;
+  background-color: #fcc4d5;
+  outline: 2px solid #832a77;
+  outline-offset: -5px; /* menggeser outline ke dalam */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 h1, h2 {
@@ -23,17 +49,6 @@ h1, h2 {
   min-height: auto;
   text-align: center;
 }
-
-.input-container {
-  text-align: center;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 3px double #5a2a82; /* warna ungu cantikk~ */
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 
 .input-ordo {
   text-align: center;
@@ -62,6 +77,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   margin-left: 10px;
+  margin-top: 20px;
 }
 
 button:hover {
@@ -75,6 +91,7 @@ button:hover {
   margin-top: 30px;
   flex-wrap: wrap;
 }
+
 
 .matrix-container {
   text-align: center;
